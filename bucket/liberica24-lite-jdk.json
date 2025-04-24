@@ -5,7 +5,7 @@
     "license": "GPL-2.0-only WITH Classpath-exception-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.1%2B11/bellsoft-jdk24.0.1%2B10-windows-amd64-lite.zip",
+            "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.1%2B11/bellsoft-jdk24.0.1%2B11-windows-amd64-lite.zip",
             "hash": "sha1:b04c20c27592100a9b9cf043b190a60c39895ce4"
         }
     },
@@ -16,7 +16,6 @@
     },
     "checkver": {
         "url": "https://api.bell-sw.com/v1/liberica/releases?version-feature=24&bundle-type=jdk-lite&version-modifier=latest&release-type=all&os=windows&arch=x86&installation-type=archive&package-type=zip&output=json&fields=version",
-        "jsonpath": "$.version",
         "regex": "(?<major>[\\d.]+)(?:\\+)(?<build>[\\d]+)",
         "replace": "${major}-${build}"
     },
